@@ -3,7 +3,6 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
-// import Meme from './components/Meme'
 import Meme from './components/Meme'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
