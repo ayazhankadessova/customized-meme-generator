@@ -63,6 +63,23 @@ html {
   gap: 0.5em;
 }
 
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 3em;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 10px;
+}
+
 .app--title {
   font-size: 1.25rem;
   margin-right: auto;
