@@ -50,41 +50,60 @@ html {
 }
 
 /* Main css */
-
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+}
 /* NAVBAR */
 
 .header {
   display: flex;
   align-items: center;
-  height: 65px;
+  height: 80px;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   color: white;
   padding: 20px;
   gap: 0.5em;
 }
 
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  gap: 3em;
+main {
+  padding: 1em;
 }
 
-button {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+/* every input takes one fraction */
+.meme--form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
   gap: 1em;
-  padding: 10px;
+  margin-bottom: 30px;
 }
 
 .app--title {
   font-size: 1.25rem;
   margin-right: auto;
 }
+
+.form--input {
+  font-family: 'Karla', sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 7px;
+  height: 150%;
+}
 .app--project {
   font-size: 12px;
   font-weight: 500;
+}
+
+/* grid column from beginning to end */
+.form--button {
+  grid-column: 1 / -1;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #fff;
+  border: 2px solid #672280;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  margin-top: 20px;
+  height: 100%;
 }

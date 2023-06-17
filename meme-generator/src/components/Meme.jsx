@@ -1,13 +1,11 @@
 function Form() {
   return (
-    <main className='form'>
-      <form>
-        <input type='text' placeholder='part1' />
-        <label>
-          <input type='text' placeholder='part2' />
-        </label>
+    <main>
+      <form className='meme--form'>
+        <input type='text' className='form--input' placeholder='Part One' />
+        <input type='text' className='form--input' placeholder='Part Two' />
+        <button className='form--button'>Generate</button>
       </form>
-      <button>Generate</button>
     </main>
   )
 }
