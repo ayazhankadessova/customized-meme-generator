@@ -1,8 +1,10 @@
 import React from 'react'
+import Question from './Question'
+import Counter from './Counter'
+import GoingOut from './GoingOut'
 
 export default function App() {
   const [things, setThings] = React.useState(['Thing 1', 'Thing 2'])
-
   const [greeting, setGreeting] = React.useState('Good ')
 
   function changeGreeting(name) {
@@ -21,8 +23,7 @@ export default function App() {
   }, [])
 
   function handleClick() {
-    const index = things.length + 1
-    setThings((prevState) => [...prevState, `Thing ${index}`])
+    setThings((prevState) => [...prevState, `Thing ${things.length + 1}`])
 
     console.log('I was clicked!')
   }
@@ -43,6 +44,9 @@ export default function App() {
       <button onClick={handleClick}>Click me</button>
       {thingList}
       <h1>{greeting}</h1>
+      <Question />
+      <Counter />
+      <GoingOut />
     </div>
   )
 }

@@ -74,10 +74,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 1. Pratice EventListeners
 2. Pratice useState
 
+UseState is a Hook
+
+```
+[undefined, f()]
+
 Advice :
 
 1. Do not change values from the body of the function, but ok to change values such as:
 
 ```
+
 <Navbar coverImage="some-image1" /> -> <Navbar coverImage="some-image2" />
+
+```
+
+2. If you want to use old value of state to determine new value of state: [rect passes the oldValue to function itself]
+
+Note: if you ever need the old value of state
+to help you determine the new value of state,
+you should pass a callback function to your
+state setter function instead of using
+state directly. This callback function will
+receive the old value of state as its parameter,
+which you can then use to determine your new
+value of state.
+
+```
+
+function add() {
+setCount(function() {
+return oldValue + 1
+})
+}
+
+```
+
+
+```
+
+function add() {
+setCount(prevCount => prevCount + 1)
+}
+
+```
+
 ```

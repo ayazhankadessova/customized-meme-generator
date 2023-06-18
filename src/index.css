@@ -68,6 +68,8 @@ body {
 
 main {
   padding: 1em;
+  align-items: center;
+  justify-content: center;
 }
 
 /* every input takes one fraction */
@@ -106,4 +108,13 @@ main {
   font-family: 'Karla', sans-serif;
   margin-top: 20px;
   height: 100%;
+}
+
+.form--pic--div {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
