@@ -1,4 +1,5 @@
 import React from 'react'
+import Count from './Count'
 
 export default function Counter() {
   const [result, setCount] = React.useState(0)
@@ -25,9 +26,7 @@ export default function Counter() {
       <button className='counter--minus' onClick={minus}>
         –
       </button>
-      <div className='counter--count'>
-        <h1>{result}</h1>
-      </div>
+      <Count number={result} />
       <button className='counter--plus' onClick={plus}>
         +
       </button>

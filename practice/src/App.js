@@ -23,9 +23,9 @@ export default function App() {
   }, [])
 
   function handleClick() {
-    setThings((prevState) => [...prevState, `Thing ${things.length + 1}`])
-
-    console.log('I was clicked!')
+    setThings((prevState) => {
+      return [...prevState, `Thing ${prevState.length + 1}`]
+    })
   }
 
   const thingList = things.map((thing) => <p key={thing}>{thing}</p>)
@@ -47,6 +47,7 @@ export default function App() {
       <Question />
       <Counter />
       <GoingOut />
+      
     </div>
   )
 }
