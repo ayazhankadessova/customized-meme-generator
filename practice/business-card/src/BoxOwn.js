@@ -12,6 +12,7 @@ export default function BoxOwn(props) {
     backgroundColor: color,
   }
 
+  // onClick={()=>props.toggle(props.id)}
   return (
     <div className='box' style={styles} onClick={props.toggle}>
       <h1>{props.on ? 'Dark' : 'Light'}</h1>

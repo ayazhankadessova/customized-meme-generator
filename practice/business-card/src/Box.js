@@ -14,9 +14,12 @@ export default function Box() {
 
   const [squares, setSquares] = React.useState(boxes)
 
+  // we care for the prevSquares
   function toggle(id) {
     setSquares((prevSquares) => {
       const newSquares = prevSquares.map((square) => {
+        // if id same, return other square objects + change state of this square object
+        // else: return square
         if (square.id === id) {
           return {
             ...square,
@@ -35,7 +38,7 @@ export default function Box() {
       className='box'
       key={square.id}
       on={square.on}
-      toggle={toggle(square.id)}
+      toggle={() => toggle(square.id)}
     ></BoxOwn>
   ))
 
