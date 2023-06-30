@@ -6,6 +6,9 @@ import Body from './Body.js'
 import Star from './Star.js'
 import Box from './Box.js'
 
+import jokesData from './jokesData.js'
+import Joke from './Joke'
+
 export default function App() {
   const [user, setUser] = React.useState('Joe')
 
@@ -15,6 +18,10 @@ export default function App() {
     phone: '+1 (719) 555-1212',
     email: 'itsmyrealname@example.com',
     isFavorite: true,
+  })
+
+  const jokeElements = jokesData.map((joke) => {
+    return <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} />
   })
   /**
    * Challenge: Fill in the values in the markup
@@ -52,6 +59,8 @@ export default function App() {
       <Body user={user} />
 
       <Box mode={false}></Box>
+
+      <div>{jokeElements}</div>
     </div>
   )
 }
