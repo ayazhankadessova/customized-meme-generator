@@ -10,6 +10,8 @@ import jokesData from './jokesData.js'
 import Joke from './Joke'
 import Form from './Form'
 
+import FormNew from './FormNew'
+
 export default function App() {
   const [user, setUser] = React.useState('Joe')
 
@@ -62,6 +64,9 @@ export default function App() {
       <Box mode={false}></Box>
 
       <div>{jokeElements}</div>
+      <div className='newForm'>
+        <FormNew />
+      </div>
       <Form />
     </div>
   )

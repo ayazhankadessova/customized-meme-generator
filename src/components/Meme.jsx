@@ -19,17 +19,41 @@ function Form() {
     })
   }
 
+  function handleChange(event) {
+    const { name, value } = event.target
+    setMemeImage((prevState) => {
+      return { ...prevState, [name]: value }
+    })
+    console.log(memeImage.bottomText)
+  }
+
   return (
     <main>
       <div className='meme--form'>
-        <input type='text' className='form--input' placeholder='Part One' />
-        <input type='text' className='form--input' placeholder='Part Two' />
+        <input
+          type='text'
+          className='form--input'
+          placeholder='Part One'
+          name='topText'
+          value={memeImage.topText}
+          onChange={handleChange}
+        />
+        <input
+          type='text'
+          className='form--input'
+          placeholder='Part Two'
+          name='bottomText'
+          value={memeImage.bottomText}
+          onChange={handleChange}
+        />
         <button onClick={randomImage} className='form--button'>
           Generate
         </button>
       </div>
-      <div className='form--pic--div'>
-        <img src={memeImage.url} className='form--picture' />
+      <div className='meme'>
+        <img src={memeImage.url} className='meme--image' />
+        <h2 className='meme--text top'>{memeImage.topText}</h2>
+        <h2 className='meme--text bottom'>{memeImage.bottomText}</h2>
       </div>
     </main>
   )

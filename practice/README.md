@@ -146,3 +146,101 @@ function toggle(id)
 3. event.target.value saves the value of the element that triggered the changes
 
 4. Not that good to be using `handleFirstNameChange`, `handleLastNameChange` and etc... so => we need to learn how to combine our state into the object and how to use the event parameter that we are receiving in our event handlers to determine which property of that state object we should be updating.
+
+> Solution: Make state as object
+
+```
+  const [formData, setFormData] = React.useState({
+    firstName: '',
+    lastName: '',
+  })
+```
+
+> Check which box is changing
+
+```
+function handleChange(event) {
+setFormData((prevFormData) => {
+    return { ...prevFormData, [event.target.name]: event.target.value }
+})
+}
+```
+
+### Forms: Controlled Components
+
+1. Two different states: one in the form input box in the regular html and other is updating in each stroke in our react code
+
+```
+<input
+    type='text'
+    placeholder='Last Name'
+    onChange={handleChange}
+    name='lastName'
+    value = {formData.lastName}
+/>
+```
+
+Now, state is in the driver seat telling the input what to display. Rather than the input box telling the state what to be.
+
+### Forms: TextArea
+
+```
+<textarea
+    value={formData.comments}
+    placeholder="Comments"
+    onChange={handleChange}
+    name="comments"
+/>
+```
+
+### Forms: checkbox
+
+```
+<input
+type='checkbox'
+name='isFriendly'
+onChange={handleChange}
+checked={formData.isFriendly}
+/>
+<label htmlFor='isFriendly'>Is Friendly?</label>
+```
+
+```
+return { ...prevFormData, [name]: type === 'checkbox' ? checked : value }
+
+```
+
+### Forms: radioboxes
+
+- Give all options same name, so that only one option can be selected at a time.
+- Value is unique
+
+```
+checked={formData.employment === "part-time"} # can do, only allows one option to be selected
+checked={formData.employment} # cannot do
+```
+
+- Logic of Forms -> give elemnt name and make it a field of the object.
+- Make `onChange` function and there get all the elements and change the one that just got altered based on the name and value which u can find from the `event.target`.
+- Special cases are checked -> boolean
+- Radiobutton -> boolean + text
+
+### Forms: Select & options
+
+```
+<select
+        id='favColor'
+        value={formData.favColor}
+        onChange={handleChange}
+        name='favColor'
+      >
+```
+
+Make one option empty:
+
+```
+ <option value=''>-- Choose --</option>
+
+```
+
+### Forms: How to Submit a Form
