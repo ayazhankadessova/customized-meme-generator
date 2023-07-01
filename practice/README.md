@@ -134,3 +134,15 @@ https://legacy.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.
 ```
 function toggle(id)
 ```
+
+---
+
+## Forms
+
+1. onChange listens to every keystroke
+
+2. event is passed to handleChange, event.target gives the element which made the event happen.
+
+3. event.target.value saves the value of the element that triggered the changes
+
+4. Not that good to be using `handleFirstNameChange`, `handleLastNameChange` and etc... so => we need to learn how to combine our state into the object and how to use the event parameter that we are receiving in our event handlers to determine which property of that state object we should be updating.

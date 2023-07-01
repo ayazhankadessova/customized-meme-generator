@@ -71,3 +71,11 @@ section {
   display: inline-block;
   margin-right: 4px;
 }
+
+form {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  /* padding: 50px; */
+  justify-content: center;
+}
