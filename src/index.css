@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
-  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  background: linear-gradient(90deg, #d0a434 1.18%, #ffdf3f 100%);
   color: white;
   padding: 20px;
   gap: 0.5em;
@@ -81,7 +81,7 @@ main {
 }
 
 .app--title {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-right: auto;
 }
 
@@ -93,7 +93,7 @@ main {
   height: 150%;
 }
 .app--project {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -101,9 +101,9 @@ main {
 .form--button {
   grid-column: 1 / -1;
   border-radius: 12px;
-  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  background: #d0a434;
   color: #fff;
-  border: 2px solid #672280;
+  border: 2px solid #d0a434;
   cursor: pointer;
   font-family: 'Karla', sans-serif;
   margin-top: 20px;
@@ -146,4 +146,16 @@ main {
 
 .top {
   top: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  /* height: 80px; */
+  background: #8b6b1b;
+  color: white;
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+  font-style: italic;
+  padding-bottom: 10px;
 }

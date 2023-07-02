@@ -4,15 +4,19 @@ import React from 'react'
 function Form() {
   const [allMemes, setAllMemes] = React.useState([])
   const [memeImage, setMemeImage] = React.useState({
-    url: 'https://i.imgflip.com/1ur9b0.jpg',
+    url: '',
     topText: '',
     bottomText: '',
   })
 
   function randomImage() {
     const memesArray = allMemes
-    const random = Math.floor(Math.random() * memesArray.length)
-    console.log(random)
+    let random = Math.floor(Math.random() * memesArray.length) // generates a random number between 0 and memesArray.length-1
+    while (random === 2) {
+      // loops until the random number is not 2
+      random = Math.floor(Math.random() * memesArray.length)
+      console.log(random)
+    }
     const randomMeme = memesArray[random].url
 
     setMemeImage((prevState) => {
@@ -40,7 +44,7 @@ function Form() {
         <input
           type='text'
           className='form--input'
-          placeholder='Part One'
+          placeholder='Add Custom Upper Next'
           name='topText'
           value={memeImage.topText}
           onChange={handleChange}
@@ -48,13 +52,13 @@ function Form() {
         <input
           type='text'
           className='form--input'
-          placeholder='Part Two'
+          placeholder='Add Custom Bottom Text'
           name='bottomText'
           value={memeImage.bottomText}
           onChange={handleChange}
         />
         <button onClick={randomImage} className='form--button'>
-          Generate
+          Generate a Meme!
         </button>
       </div>
       <div className='meme'>
