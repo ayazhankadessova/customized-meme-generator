@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
-  background: linear-gradient(90deg, #d0a434 1.18%, #ffdf3f 100%);
+  background: linear-gradient(90deg, #7484fc 1.18%, #ffdf3f 100%);
   color: white;
   padding: 20px;
   gap: 0.5em;
@@ -152,7 +152,7 @@ main {
   display: flex;
   align-items: center;
   /* height: 80px; */
-  background: #8b6b1b;
+  background: linear-gradient(90deg, #7484fc 1.18%, #ffdf3f 100%);
   color: white;
   padding: 20px;
   font-family: 'Karla', sans-serif;
@@ -161,5 +161,5 @@ main {
 }
 
 .footer-text {
-  font-size: 20px;
+  font-size: 15px;
 }
