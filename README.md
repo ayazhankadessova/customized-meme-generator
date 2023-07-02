@@ -67,7 +67,7 @@ I'm aspiring software developer from Kazakhstan, studying in Hong Kong.
 
 👩‍💻 I'm currently improving my skills in React.js :)
 
---------------------------------------------- My Notes :) -----------------------------------------------
+<h2 align="center">✍️My Notes✍️</h2>
 
 ### Key things learned/practiced:
 
@@ -77,29 +77,14 @@ I'm aspiring software developer from Kazakhstan, studying in Hong Kong.
 4. Forms [inputboxes, checkbox, select, textarea]
 5. Side Effects (API calls, etc)
 
-/\*\*
-
-- UPD:
-- As soon as the Meme component loads the first time,
-- make an API call to "https://api.imgflip.com/get_memes".
--
-- When the data comes in, save just the memes array part
-- of that data to the `allMemes` state
--
-- Think about if there are any dependencies that, if they
-- changed, you'd want to cause to re-run this function.
-- \*/
-
-### Notes
-
-npm create vite@latest
+> npm create vite@latest
 
 1. Event listener
 2. Ask API
 3. Get random pic from what api gave us
 4. display
 
-React events:
+### React events:
 
 https://legacy.reactjs.org/docs/events.html#mouse-events
 
@@ -117,23 +102,23 @@ const [show, setShow] = React.useState(false)
 
 2. When adding event listeners, it's important to add them to **native DOM elements** instead of custom elements. For example, if you have a custom `Star` component that you want to make clickable, you should add the `onClick` event to the `img` element inside the `Star` component.
 
-   Here's an example:
+Here's an example:
 
-   ````
-   export default function Star(props) {
-     const starIcon = props.isFilled ? starFilled : starNot
+```
+export default function Star(props) {
+  const starIcon = props.isFilled ? starFilled : starNot
 
-     return (
-       <img
-         src={starIcon}
-         className='card--favorite'
-         alt='star'
-         onClick={props.handleClick}
-       />
-     )
-   }
-   ```
-   ````
+  return (
+    <img
+      src={starIcon}
+      className='card--favorite'
+      alt='star'
+      onClick={props.handleClick}
+    />
+  )
+}
+```
+
 
 3. If you want to pass state to a sibling component, you should pass the state up to the parent component and then down to the child components. This is known as **"lifting state up"** in React.
 
@@ -325,7 +310,3 @@ getMemes()
 ```
 
 In this example, the `getMemes` function is defined separately inside the `useEffect` callback function, and is called to fetch data from an API. The `setAllMemes` function is then used to update the state with the fetched data.
-
-```
-
-```
