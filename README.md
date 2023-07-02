@@ -11,7 +11,6 @@
 5. Side Effects (API calls, etc)
    
 ![meme-generator](https://github.com/ayazhankadessova/customized-meme-generator/assets/86869537/bee86900-af86-49f4-a601-eca08bfe6c64)
-![meme-generator-2](https://github.com/ayazhankadessova/customized-meme-generator/assets/86869537/8d349d87-3408-4c93-bad4-0e0d53544da7)
 
 /\*\*
 
