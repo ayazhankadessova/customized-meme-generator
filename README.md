@@ -24,7 +24,9 @@ I also tried to make my code clearn by:
 
 ## Links & Demo
 
-![meme-generator](https://github.com/ayazhankadessova/customized-meme-generator/assets/86869537/28738713-edc4-47c2-aea1-4719bfae6e1d)
+<p align="center">
+<img src="https://github.com/ayazhankadessova/customized-meme-generator/assets/86869537/28738713-edc4-47c2-aea1-4719bfae6e1d" width="800" alt="meme-generator">
+</p>
 
 - [Github Repo](https://github.com/ayazhankadessova/customized-meme-generator)
 
