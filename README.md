@@ -4,6 +4,8 @@
 
 `React`, `Vite`, `HTML`, `CSS`, `API`.
 
+## Check my App out [here](https://customized-meme-generator.netlify.app) ! Generate & Customize Your Memes 🤭
+
 ## 💡 Idea
 
 Customized Meme Generator offers a simple and intuitive UI that allows users to generate a random meme with just a few clicks. By using the [Imgflip API](https://imgflip.com/api), the app is able to access a large collection of high-quality meme templates, ensuring that users will always have access to fresh and relevant content. 
