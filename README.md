@@ -26,9 +26,7 @@ I also tried to make my code clearn by:
 
 ## Links & Demo
 
-<p align="center">
-<img src="https://github.com/ayazhankadessova/customized-meme-generator/assets/86869537/28738713-edc4-47c2-aea1-4719bfae6e1d" width="500" alt="meme-generator">
-</p>
+![meme-generator](https://github.com/ayazhankadessova/customized-meme-generator/assets/86869537/428a71b8-8063-4879-880e-8398e00f254a)
 
 - [Github Repo](https://github.com/ayazhankadessova/customized-meme-generator)
 
