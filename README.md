@@ -18,7 +18,7 @@ My motivation was to **practice** creating responsive React App, working with si
 
 I used the [Imgflip API](https://imgflip.com/api), which uses a RESTful JSON interface with standard HTTP form urlencoded parameters for requests and JSON data for responses. 
 
-I also tried to make my code clearn by: 
+I also tried to make my code clean by: 
 
 1. Making the state as an object and using the `event` parameter in the `handleChange` function to determine which property of the state object(Meme) to update.
 
