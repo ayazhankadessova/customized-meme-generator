@@ -1,18 +1,20 @@
 <h2 align="center">
- <img src="https://media.giphy.com/media/JsDtKXMBOAJt1mJYaF/giphy.gif" width="90">CUstomized Meme Generator - Vite & React <img src="https://media.giphy.com/media/JsDtKXMBOAJt1mJYaF/giphy.gif" width="90">
+ <img src="https://media.giphy.com/media/JsDtKXMBOAJt1mJYaF/giphy.gif" width="90">Customized Meme Generator - Vite & React <img src="https://media.giphy.com/media/JsDtKXMBOAJt1mJYaF/giphy.gif" width="90">
 </h2>
 
 `React`, `Vite`, `HTML`, `CSS`, `API`.
 
 ## 💡 Idea
 
-Customized Meme Generator offers a simple and intuitive UI that allows users to generate a random meme with just a few clicks. By using the Imgflip API, the app is able to access a large collection of high-quality meme templates, ensuring that users will always have access to fresh and relevant content. 
+Customized Meme Generator offers a simple and intuitive UI that allows users to generate a random meme with just a few clicks. By using the [Imgflip API](https://imgflip.com/api), the app is able to access a large collection of high-quality meme templates, ensuring that users will always have access to fresh and relevant content. 
 
 Users can also add Top and Bottom text to the Memes & customize them!
 
 ## Motivation
 
-My motivation was to practice creating responsive React App, working with side effects (API) and state. I used the [Imgflip API](https://imgflip.com/api), which uses a RESTful JSON interface with standard HTTP form urlencoded parameters for requests and JSON data for responses. 
+My motivation was to **practice** creating responsive React App, working with side effects (API) and state. I was practicing different aspects of React Development along the way (Props vs State, Forms in React, Conditional Rendering, useEffect, State, Event Listeners) and decided to save the **practice** folder here as well :)
+
+I used the [Imgflip API](https://imgflip.com/api), which uses a RESTful JSON interface with standard HTTP form urlencoded parameters for requests and JSON data for responses. 
 
 I also tried to make my code clearn by: 
 
@@ -63,7 +65,7 @@ I'm aspiring software developer from Kazakhstan, studying in Hong Kong.
 
 👩‍💻 I'm currently improving my skills in React.js :)
 
-### In this projects: I built my second interactive REACT App.
+--------------------------------------------- My Notes :) -----------------------------------------------
 
 ### Key things learned/practiced:
 
