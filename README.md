@@ -46,7 +46,7 @@ const [show, setShow] = React.useState(false)
 
 - Passing Data to Components:
 
-<img src="/public/passingdata.png" alt="Passing Data in React" width="400"/>
+<img src="./public/passingdata.png" alt="Passing Data in React" width="400"/>
 
 2. When adding event listeners, it's important to add them to **native DOM elements** instead of custom elements. For example, if you have a custom `Star` component that you want to make clickable, you should add the `onClick` event to the `img` element inside the `Star` component.
 
@@ -98,6 +98,7 @@ useEffect(() => {
 }, [dependency1, dependency2, ...]);
 
 ```
+
 In this example, the effect function will run whenever any of the dependencies in the array change. If the array is empty, the effect will only run once, on mount.
 
 Here's an improved version of your README.md notes that is more structured and easier to read:
