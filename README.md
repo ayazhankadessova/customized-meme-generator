@@ -9,8 +9,8 @@
 3. Conditional rendering
 4. Forms [inputboxes, checkbox, select, textarea]
 5. Side Effects (API calls, etc)
-   
-![meme-generator](https://github.com/ayazhankadessova/customized-meme-generator/assets/86869537/bee86900-af86-49f4-a601-eca08bfe6c64)
+
+![meme-generator](https://github.com/ayazhankadessova/customized-meme-generator/assets/86869537/28738713-edc4-47c2-aea1-4719bfae6e1d)
 
 /\*\*
 
