@@ -45,7 +45,8 @@ const [show, setShow] = React.useState(false)
 ```
 
 - Passing Data to Components:
-  [!passingData](passingdata.png)
+
+<img src="/public/passingdata.png" alt="Passing Data in React" width="400"/>
 
 2. When adding event listeners, it's important to add them to **native DOM elements** instead of custom elements. For example, if you have a custom `Star` component that you want to make clickable, you should add the `onClick` event to the `img` element inside the `Star` component.
 
