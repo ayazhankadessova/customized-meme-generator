@@ -59,7 +59,7 @@ const [show, setShow] = React.useState(false)
 
 Here's an example:
 
-````
+```
 fetch('https://swapi.dev/api/people/1')
   .then((res) => res.json())
   .then((data) => setStarWarsData(data))
@@ -97,7 +97,7 @@ Here's an improved version of your README.md notes that is more structured and e
 
    Here's an example:
 
-````
+```
 
 const [formData, setFormData] = React.useState({
 firstName: '',
