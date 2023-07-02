@@ -10,6 +10,19 @@
 4. Forms [inputboxes, checkbox, select, textarea]
 5. Side Effects (API calls, etc)
 
+/\*\*
+
+- UPD:
+- As soon as the Meme component loads the first time,
+- make an API call to "https://api.imgflip.com/get_memes".
+-
+- When the data comes in, save just the memes array part
+- of that data to the `allMemes` state
+-
+- Think about if there are any dependencies that, if they
+- changed, you'd want to cause to re-run this function.
+- \*/
+
 ### Notes
 
 npm create vite@latest
@@ -30,6 +43,9 @@ To update state in React, use the `useState` hook. This allows you to pass state
 ```
 const [show, setShow] = React.useState(false)
 ```
+
+- Passing Data to Components:
+  [!passingData](passingdata.png)
 
 2. When adding event listeners, it's important to add them to **native DOM elements** instead of custom elements. For example, if you have a custom `Star` component that you want to make clickable, you should add the `onClick` event to the `img` element inside the `Star` component.
 
