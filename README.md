@@ -12,7 +12,7 @@ Users can also add Top and Bottom text to the Memes & customize them!
 
 ## Motivation
 
-My motivation was to **practice** creating responsive React App, working with side effects (API) and state. I was practicing different aspects of React Development along the way (Props vs State, Forms in React, Conditional Rendering, useEffect, State, Event Listeners) and decided to save the **practice** folder here as well :)
+My motivation was to **practice** creating responsive React App, working with side effects (API) and state. I was practicing different aspects of React Development along the way (Props vs State, Forms in React, Conditional Rendering, useEffect, State, Event Listeners) and decided to save the [**practice** folder](https://github.com/ayazhankadessova/customized-meme-generator/tree/main/practice) here as well :)
 
 I used the [Imgflip API](https://imgflip.com/api), which uses a RESTful JSON interface with standard HTTP form urlencoded parameters for requests and JSON data for responses. 
 
@@ -66,3 +66,7 @@ npm run dev
 I'm aspiring software developer from Kazakhstan, studying in Hong Kong.
 
 👩‍💻 I'm currently improving my skills in React.js :)
+
+## ✍️ My Notes
+
+- Saved My Notes [here](https://github.com/ayazhankadessova/customized-meme-generator/blob/main/myNotes.md) & [practice folder](https://github.com/ayazhankadessova/customized-meme-generator/tree/main/practice).
