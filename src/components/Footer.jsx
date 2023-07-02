@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div>
       <footer className='footer'>
-        <p>
+        <p className='footer-text'>
           If any of the generated images were disturbing, I am sorry in advance!
           I have tried to go through them and get rid of weird ones. If there is
           a better API with memes, feel free to ping me on{' '}

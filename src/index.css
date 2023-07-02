@@ -159,3 +159,7 @@ main {
   font-style: italic;
   padding-bottom: 10px;
 }
+
+.footer-text {
+  font-size: 20px;
+}
