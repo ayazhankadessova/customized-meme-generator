@@ -139,7 +139,7 @@ function toggle(id)
 
 ## Forms
 
-1. onChange listens to every keystroke
+1. `onChange` listens to every keystroke
 
 2. event is passed to handleChange, event.target gives the element which made the event happen.
 
@@ -244,3 +244,25 @@ Make one option empty:
 ```
 
 ### Forms: How to Submit a Form
+
+- Button inside the form automatically acts like a button -> its type is automatically submit
+- Because button is inside the form -> its value is automatically triggers the onSubmit event in the form
+
+```
+<form onSubmit={handleSubmit}>
+```
+
+- Prevent default. Default form submission behavior is that it reloads the page and default the valuesm but we don't want that behavior. event.preventDefault() is used to prevent the default behavior of an event in JavaScript, and in the context of an HTML form submission, it is used to prevent the browser from reloading the page after the form is submitted.
+
+```
+ function handleSubmit(event) {
+        event.preventDefault()
+        submitToApi(formData)
+    }
+```
+
+## Target -> represents smth that has been modified
+
+### Memes from API
+
+1. We dont reallt want Async function
